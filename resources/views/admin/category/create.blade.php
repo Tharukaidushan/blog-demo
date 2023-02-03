@@ -23,31 +23,61 @@
                     <label for="slug">Slug</label>
                     <input type="text" name="slug" class="form-control bg-light border-0 small"
                         placeholder="New slug">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <div class="mb-3">
                     <label>Description</label>
                     <input type="text" name="description" class="form-control bg-light border-0 small"
                         placeholder="Category description">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <div class="mb-3">
                     <label for="image">Image</label>
                     <input type="file" name="image" class="form-control">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <hr>
                 <div class="mb-3">
                     <label for="Meta Title">Meta Title</label>
                     <input type="text" name="meta_title" class="form-control bg-light border-0 small"
                         placeholder="Meta title">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <div class="mb-3">
                     <label>Meta Description</label>
                     <input type="text" name="meta_description" class="form-control bg-light border-0 small"
                         placeholder="Meta title">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <div class="mb-3">
                     <label>Meta Keywords</label>
                     <input type="text" name="meta_keyword" class="form-control bg-light border-0 small"
                         placeholder="Meta keywords">
+                    <span class="text-danger">
+                        @error('name')
+                            {{ $message }}
+                        @enderror
+                    </span>
                 </div>
                 <div class="form-group mt-3">
                     <div class="custom-control custom-checkbox small">

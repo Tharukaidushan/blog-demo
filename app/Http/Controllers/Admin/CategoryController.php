@@ -68,7 +68,13 @@ class CategoryController extends Controller
                 ],
             ],
             [
-                'name.required' => "Please fill",
+                'name.required' => "Please fill this field.",
+                'slug.required' => "Please fill this field.",
+                'description.required' => "Please fill this field.",
+                'image.required' => "Please add the image (jpg, jpeg, png).",
+                'meta_title.required' => "Please fill this field.",
+                'meta_description.required' => "Please fill this field.",
+                'meta_keyword.required' => "Please fill this field.",
             ]
         );
 
