@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Add-Category')
+@section('sub-title', 'Add a new category')
 
 @section('content')
     <div class="card shadow mb-4 mx-3">
@@ -24,7 +25,7 @@
                     <input type="text" name="slug" class="form-control bg-light border-0 small"
                         placeholder="New slug">
                     <span class="text-danger">
-                        @error('name')
+                        @error('slug')
                             {{ $message }}
                         @enderror
                     </span>
@@ -34,7 +35,7 @@
                     <input type="text" name="description" class="form-control bg-light border-0 small"
                         placeholder="Category description">
                     <span class="text-danger">
-                        @error('name')
+                        @error('description')
                             {{ $message }}
                         @enderror
                     </span>
@@ -43,7 +44,7 @@
                     <label for="image">Image</label>
                     <input type="file" name="image" class="form-control">
                     <span class="text-danger">
-                        @error('name')
+                        @error('image')
                             {{ $message }}
                         @enderror
                     </span>
@@ -54,7 +55,7 @@
                     <input type="text" name="meta_title" class="form-control bg-light border-0 small"
                         placeholder="Meta title">
                     <span class="text-danger">
-                        @error('name')
+                        @error('meta_title')
                             {{ $message }}
                         @enderror
                     </span>
@@ -64,7 +65,7 @@
                     <input type="text" name="meta_description" class="form-control bg-light border-0 small"
                         placeholder="Meta title">
                     <span class="text-danger">
-                        @error('name')
+                        @error('meta_description')
                             {{ $message }}
                         @enderror
                     </span>
@@ -74,7 +75,7 @@
                     <input type="text" name="meta_keyword" class="form-control bg-light border-0 small"
                         placeholder="Meta keywords">
                     <span class="text-danger">
-                        @error('name')
+                        @error('meta_keyword')
                             {{ $message }}
                         @enderror
                     </span>
